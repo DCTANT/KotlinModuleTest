@@ -12,7 +12,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.libs.util.R;
+import com.example.dctlib.R;
 
 import java.lang.ref.WeakReference;
 

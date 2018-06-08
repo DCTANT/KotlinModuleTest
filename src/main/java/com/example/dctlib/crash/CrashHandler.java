@@ -10,10 +10,10 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.dctlib.FileUtil;
+import com.example.dctlib.NetworkUtil;
+import com.example.dctlib.TimeUtil;
 import com.google.gson.Gson;
-import com.libs.util.FileUtil;
-import com.libs.util.NetworkUtil;
-import com.libs.util.TimeUtil;
 
 import java.lang.reflect.Field;
 
@@ -123,7 +123,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 				crashModel.getEssentialInfo().put("VersionCode", versionCode);
 				crashModel.getEssentialInfo().put("AndroidVersion", Build.VERSION.RELEASE+ "(" + Build.MODEL + ")");
 				crashModel.getEssentialInfo().put("Exception","message:"+e2.toString());
-				crashModel.getEssentialInfo().put("CrashTime",TimeUtil.timeStampToDate(System.currentTimeMillis()));
+				crashModel.getEssentialInfo().put("CrashTime", TimeUtil.timeStampToDate(System.currentTimeMillis()));
 				crashModel.getEssentialInfo().put("NetworkAvailable", NetworkUtil.isNetworkAvailable(application.getApplicationContext())+"");
 			}
 			String lines="";

@@ -12,7 +12,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.libs.util.R;
+import com.example.dctlib.R;
+
 
 /**
  * Created by Administrator on 2016/3/21.

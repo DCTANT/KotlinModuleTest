@@ -15,7 +15,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ListView;
 import android.widget.OverScroller;
 
-import com.libs.util.R;
+import com.example.dctlib.R;
 
 
 /**

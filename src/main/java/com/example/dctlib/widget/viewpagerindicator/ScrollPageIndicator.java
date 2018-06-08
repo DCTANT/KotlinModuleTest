@@ -28,7 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.libs.util.R;
+import com.example.dctlib.R;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -334,7 +334,7 @@ public class ScrollPageIndicator extends HorizontalScrollView implements PageInd
         mListener = listener;
     }
 
-    private class TabView extends TextView {
+    private class TabView extends android.support.v7.widget.AppCompatTextView {
         private int mIndex;
 
         public TabView(Context context) {
